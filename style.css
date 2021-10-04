@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mobile first method */
+body {
+  background: url(images/pattern-background-mobile.svg) no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 20px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  max-height: 100%; /*very important to resizxe the imeg size automatically*/
+}
+h1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  padding: 20px 40px;
+}
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  padding: 0 40px;
+}
+.plan {
+  min-width: 300px;
+  max-height: 80px;
+  margin: 0 20px;
+  background-color: hsl(225, 100%, 98%);
+  margin: 20px 30px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.plan span {
+  position: relative;
+  left: -20px;
+}
+
+#a1 {
+  min-width: 300px;
+  max-height: 60px;
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  color: hsl(225, 100%, 98%);
+  border-radius: 9px;
+  border: none;
+  font-weight: 700;
+  padding: 20px;
+  box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+}
+#a2 {
+  text-decoration: none;
+  padding: 20px 0 40px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.plan a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+#a1:hover {
+  opacity: 0.7;
+}
+#a2:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (min-width: 440px) {
+  .plan {
+    width: 360px;
+    height: 80px;
+  }
+  #a1 {
+    width: 360px;
+    height: 60px;
+  }
+  .plan span {
+    position: relative;
+    left: -50px;
+  }
+}
